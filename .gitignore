@@ -21,22 +21,22 @@ toDoApp/.c9/
 *.sublime-workspace
 
 # Visual Studio Code
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
+toDoApp/.vscode/*
+toDoApp/!.vscode/settings.json
+toDoApp/!.vscode/tasks.json
+toDoApp/!.vscode/launch.json
+toDoApp/!.vscode/extensions.json
 .history/*
 
 # Miscellaneous
-/.angular/cache
-.sass-cache/
-/connect.lock
-/coverage
-/libpeerconnection.log
-testem.log
-/typings
+toDoApp/.angular/cache
+toDoApp/.sass-cache/
+toDoApp/connect.lock
+toDoApp/coverage
+toDoApp/libpeerconnection.log
+toDoApp/testem.log
+toDoApp/typings
 
 # System files
-.DS_Store
-Thumbs.db
+toDoApp/.DS_Store
+toDoApp/Thumbs.db
