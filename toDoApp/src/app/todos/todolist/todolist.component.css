@@ -1,7 +1,7 @@
 .todoItemBox {
     display:flex;
     flex-direction: column;
-    padding:1rem;
+    padding:1rem; 
     /* background-color: lightcoral; */
     gap:.5rem;
     height:100%;
