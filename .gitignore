@@ -1,21 +1,21 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
 # Compiled output
-/dist
-/tmp
-/out-tsc
-/bazel-out
+toDoApp/dist
+toDoApp/tmp
+toDoApp/out-tsc
+toDoApp/bazel-out
 
 # Node
-/node_modules
-npm-debug.log
-yarn-error.log
+toDoApp/node_modules
+toDoApp/npm-debug.log
+toDoApp/yarn-error.log
 
 # IDEs and editors
-.idea/
-.project
-.classpath
-.c9/
+toDoApp/.idea/
+toDoApp/.project
+toDoApp/.classpath
+toDoApp/.c9/
 *.launch
 .settings/
 *.sublime-workspace
