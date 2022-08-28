@@ -1,0 +1,68 @@
+.todoItemBox {
+    display:flex;
+    flex-direction: column;
+    padding:1rem;
+    /* background-color: lightcoral; */
+    gap:.5rem;
+    height:100%;
+    max-height: 100%;
+    overflow-y:auto;
+
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.4px);
+    -webkit-backdrop-filter: blur(4.4px);
+
+}
+
+.addTaskBox {
+    display:flex;
+    gap:1rem;
+    padding:.5rem;
+    border-radius: 5px;
+    background-color: lightblue;
+    background-color: hsl(219, 79%, 66%);
+
+    align-items: center;
+}
+input, button {
+    border:none;
+    background-color: lightblue;
+    background-color: hsl(219, 79%, 66%);
+
+}
+
+input {
+    width:80%;
+    height:2rem;
+    border:4px hsl(195, 53%, 59%);
+    outline:none;
+}
+
+input::placeholder{
+    color:white;
+    font-style: oblique;
+}
+
+input[type="text"].input:hover{
+    background-color: hsl(219, 79%, 63%);
+}
+
+button {
+    color:white;
+    font-size:30px;
+    width:2.5rem;
+    height:2.5rem;
+}
+
+button:hover:not([disabled]) {
+    cursor:pointer;
+    transform: scale(1.25);
+    transition: all 0.1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+button:disabled {
+    cursor:not-allowed;
+}

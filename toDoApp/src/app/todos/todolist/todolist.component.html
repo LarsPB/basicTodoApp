@@ -1,0 +1,19 @@
+<div class="todoItemBox">
+    <app-todo-item
+    *ngFor="let item of todoItems;"
+    [todoItem]="item"
+    ></app-todo-item>
+    <div #scrollBox class="addTaskBox">
+        <button
+            [disabled]="hasInput == ''" 
+            (click)="addTask()"
+            >+</button>
+        <input
+            [(ngModel)]="hasInput"
+            (keyup)="$event.keyCode == 13 && hasInput !='' && addTask()"
+            class="input" 
+            #taskInput 
+            type="text" 
+            placeholder="Voeg taak toe...">
+    </div>
+</div>

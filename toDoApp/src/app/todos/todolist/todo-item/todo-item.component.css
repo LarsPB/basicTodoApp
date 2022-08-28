@@ -1,0 +1,54 @@
+.box {
+    display:flex;
+    padding:.5rem;
+    /* background-color: hsl(80, 70%, 58%); */
+    border-radius: 5px;
+    border:none;
+    align-self: center;
+    background: rgb(175,255,180);
+    background: linear-gradient(90deg, rgba(175,255,180,1) 0%, rgba(57,113,61,1) 46%, rgba(145,167,0,1) 100%);
+}
+
+div {
+    display:flex;
+    flex-grow: 1;
+    gap:1rem;
+    justify-content:space-between;
+    align-items: center;
+    width:inherit;
+    /* background-color: grey; */
+}
+
+label {
+    display:flex;
+    gap:1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    width: 2rem;
+    height: 2rem;
+}
+
+.bin-span:hover{
+    color:hsl(219, 79%, 66%);
+    cursor:pointer;
+}
+
+i {
+    font-size: x-large;
+    color:hsl(219, 79%, 36%);
+}
+
+i:hover {
+    color:hsl(219, 79%, 46%);
+    transform:rotate(4deg);
+    transition: all .2s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+
+input[type=checkbox]:checked + .lineThrough {
+    text-decoration:line-through;
+}
+
