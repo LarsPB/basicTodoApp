@@ -16,12 +16,19 @@ export class TodolistComponent implements OnInit {
     new Todo("Afwassen")
   ];
 
-  constructor() {
-  }
+  constructor() {}
 
   ngOnInit(): void {
     const ding = localStorage.getItem("Todos");
-    this.todoItems = JSON.parse(ding!);
+    if(ding === null){
+      console.log("null");
+      localStorage.setItem("Todos", JSON.stringify(this.todoItems));
+      // this.todoItems = JSON.parse(ding!);
+    }
+    else{
+      console.log("Else");
+      this.todoItems = JSON.parse(ding!);
+    }
     // this.scrollBox.nativeElement.scrollIntoView({behavior: 'smooth'});
   }
 
