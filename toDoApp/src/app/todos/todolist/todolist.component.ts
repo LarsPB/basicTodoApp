@@ -13,7 +13,7 @@ export class TodolistComponent implements OnInit {
   hasInput:string = "";
   
   todoItems:Todo[] = [
-    new Todo("afwassen")
+    new Todo("Afwassen")
   ];
 
   constructor() {
@@ -26,6 +26,7 @@ export class TodolistComponent implements OnInit {
 
 
   addTask(){
+    this.taskInput.nativeElement.value = this.taskInput.nativeElement.value.charAt(0).toUpperCase() + this.taskInput.nativeElement.value.slice(1);
     this.todoItems.push(new Todo(this.taskInput.nativeElement.value));
     this.taskInput.nativeElement.value = '';
     this.hasInput = "";
