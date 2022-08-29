@@ -31,4 +31,9 @@ export class TodolistComponent implements OnInit {
     this.hasInput = "";
   }
 
+  onTodoItemSelected(todoItem:Todo){
+    const index = this.todoItems.indexOf(todoItem);
+    this.todoItems.splice(index, 1);
+  }
+
 }

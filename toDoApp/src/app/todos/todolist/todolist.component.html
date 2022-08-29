@@ -2,6 +2,7 @@
     <app-todo-item
     *ngFor="let item of todoItems;"
     [todoItem]="item"
+    (todoItemSelected)="onTodoItemSelected(item)"
     ></app-todo-item>
     <div #scrollBox class="addTaskBox">
         <button
