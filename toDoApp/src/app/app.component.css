@@ -1,6 +1,8 @@
 div{
     height:100%;
-    background-image: url("../assets/img/backgroundTree.jpg");
+    /* background-image: url("../assets/img/backgroundTree.jpg"); */
+    background-image: url("../assets/img/background.png");
+
     background-size:cover;
     overflow:hidden;
 }
