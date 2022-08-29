@@ -20,8 +20,8 @@ export class TodolistComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    const ding = localStorage.getItem("Todos");
-    this.todoItems = JSON.parse(ding!);
+    // const ding = localStorage.getItem("Todos");
+    // this.todoItems = JSON.parse(ding!);
     // this.scrollBox.nativeElement.scrollIntoView({behavior: 'smooth'});
   }
 
@@ -33,13 +33,13 @@ export class TodolistComponent implements OnInit {
     this.todoItems.push(new Todo(this.taskInput.nativeElement.value));
     this.taskInput.nativeElement.value = '';
     this.hasInput = "";
-    localStorage.setItem("Todos", JSON.stringify(this.todoItems));
+    // localStorage.setItem("Todos", JSON.stringify(this.todoItems));
   }
 
   onTodoItemSelected(todoItem:Todo){
     const index = this.todoItems.indexOf(todoItem);
     this.todoItems.splice(index, 1);
-    localStorage.setItem("Todos", JSON.stringify(this.todoItems));
+    // localStorage.setItem("Todos", JSON.stringify(this.todoItems));
   }
 
 }
