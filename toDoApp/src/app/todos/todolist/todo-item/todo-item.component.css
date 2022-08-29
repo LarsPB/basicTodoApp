@@ -5,8 +5,8 @@
     border-radius: 5px;
     border:none;
     align-self: center;
-    background: rgb(175,255,180);
-    background: linear-gradient(90deg, rgba(175,255,180,1) 0%, rgba(57,113,61,1) 46%, rgba(145,167,0,1) 100%);
+    background: rgb(120,120,204);
+    background: linear-gradient(90deg, rgba(120,120,204,1) 0%, rgba(185,205,255,1) 100%);
 }
 
 div {
@@ -52,3 +52,6 @@ input[type=checkbox]:checked + .lineThrough {
     text-decoration:line-through;
 }
 
+input[type="checkbox"]{
+    accent-color: #7ACC7A;
+}
