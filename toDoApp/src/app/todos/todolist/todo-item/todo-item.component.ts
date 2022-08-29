@@ -19,7 +19,9 @@ export class TodoItemComponent implements OnInit {
     this.todoItemSelected.emit();
   }
 
-
+  ngOnChanges():void{
+    console.log("test");
+  }
 
   
 }
